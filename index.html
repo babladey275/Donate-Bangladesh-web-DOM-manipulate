@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Bangladesh</title>
+    <!-- google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <!-- daisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+            fontFamily: {
+              lexend: 'Lexend',
+            },
+          },
+        },
+      };
+    </script>
 </head>
-<body>
+<body class="font-lexend">
     <header>
         <nav class="bg-[#F9F7F3]">
             <div class="w-11/12 mx-auto">
@@ -118,5 +136,8 @@
          </div>
       </div>
     </main>
+    <footer class="h-12 md:h-20 bg-[#F9F7F3]"></footer>
+
+    <script src="js/utilities.js"></script>
 </body>
 </html>
