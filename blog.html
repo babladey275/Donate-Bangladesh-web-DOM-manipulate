@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/7337456c0d.js" crossorigin="anonymous"></script>
+    <!-- daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+            fontFamily: {
+              lexend: 'Lexend',
+            },
+          },
+        },
+      };
+    </script>
+</head>
+<body class="font-lexend">
+    <header>
+        <nav class="bg-[#F9F7F3]">
+            <div class="w-11/12 mx-auto">
+              <div class="navbar pt-5 pb-14">
+                <div class="navbar-start  hidden md:block">
+                  <a href="index.html" class="btn bg-[#B4F461] px-8 font-bold">Home</a>
+                </div>
+                <div class="navbar-center flex gap-3">
+                  <img class="h-8" src="assets/logo.png" alt="">
+                  <h2 class="text-xl font-bold">Donate Bangladesh</h2>
+                </div>
+                <div class="navbar-end">
+                  <div class="flex space-x-1">
+                    <div><img src="assets/coin.png" alt=""></div>
+                    <div id="account-balance" class="font-medium text-gray-700 text-xl">5500</div>
+                    <div class="font-medium text-gray-700 text-xl">BDT</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main class="w-[89%] mx-auto mt-10 mb-8 md:mb-16">
+         <section>
+            <div class="mb-8 flex gap-2">
+                <h2 class="text-3xl font-bold">Important FAQ</h2>
+                <i class="fa-regular fa-circle-question text-4xl"></i>
+            </div>
+
+            <div class="faq-box p-4 border-2 shadow mb-8">
+                <div class="question flex justify-between items-center">
+                    <h4 class="text-xl font-semibold text-gray-700 pb-4">What is the Document Object Model (DOM)?</h4>
+                    <i class="icon fa-solid fa-angle-down text-xl text-bold text-gray-700 mr-0 md:mr-4"></i>
+                </div>
+                <div class="answer">
+                    <p class="text-gray-600">Document object model is a tree structure representing HTML documents, allowing to developer access, modify content, create/remove elements and handle events using JavaScript.</p>
+                </div>              
+            </div>
+
+            <div class="faq-box p-4 border-2 shadow mb-8">
+                <div class="question flex justify-between items-center">
+                    <h4 class="text-xl font-semibold text-gray-700 pb-4">How do you select an element from the DOM?</h4>
+                    <i class="icon fa-solid fa-angle-down text-xl text-bold text-gray-700 mr-0 md:mr-4"></i>
+                </div>
+                <div class="answer">
+                    <p class="text-gray-600">Using the getElementById(), getElementsByClassName(), getElementByTagName(), querySelector() and querySelectorAll() methods.</p>
+                </div>              
+            </div>
+
+            <div class="faq-box p-4 border-2 shadow mb-8">
+                <div class="question flex justify-between items-center">
+                    <h4 class="text-xl font-semibold text-gray-700 pb-4">What is event delegation in the context of the DOM, and why is it useful?</h4>
+                    <i class="icon fa-solid fa-angle-down text-xl text-bold text-gray-700 mr-0 md:mr-4"></i>
+                </div>
+                <div class="answer">
+                    <p class="text-gray-600">Event delegation is a design pattern in the DOM used to efficiently manage and handle events on multiple child elements by attaching a single event listener to a parent element. It reduces number of event listeners, dynamic handling and code simplicities. </p>
+                </div>              
+            </div>
+
+            <div class="faq-box p-4 border-2 shadow mb-8">
+                <div class="question flex justify-between items-center">
+                    <h4 class="text-xl font-semibold text-gray-700 pb-4">How do you manipulate an element's attributes and styles using the DOM?</h4>
+                    <i class="icon fa-solid fa-angle-down text-xl text-bold text-gray-700 mr-0 md:mr-4"></i>
+                </div>
+                <div class="answer">
+                    <p class="text-gray-600">i need to select the element like getElementById, getElementsByClassName or querySelector. Alter the appearance of an element by using CSS properties.</p>
+                </div>              
+            </div>
+         </section>
+    </main>
+
+    <script src="js/blog.js"></script>
+</body>
+</html>

@@ -1,11 +1,11 @@
 
 const donateButtons = document.getElementsByClassName('btn-donate-now');
 
-for(let i = 0; i < donateButtons.length; i++) {
-    donateButtons[i].addEventListener('click', function(){
-        const amountNoakhali = getInputValueById('input-amount-noakhali');
-        const amountFeni = getInputValueById('input-amount-feni');
-        const amountInjured = getInputValueById('input-amount-injured');
+// for(let i = 0; i < donateButtons.length; i++) {
+//     donateButtons[i].addEventListener('click', function(){
+//         const amountNoakhali = getInputValueById('input-amount-noakhali');
+//         const amountFeni = getInputValueById('input-amount-feni');
+//         const amountInjured = getInputValueById('input-amount-injured');
 
         // if(amountNoakhali > 0) {
         //     console.log('a');
@@ -43,5 +43,5 @@ for(let i = 0; i < donateButtons.length; i++) {
         // else{
         //     alert('Invalid amount');
         // }
-    })
-}
+//     })
+// }
