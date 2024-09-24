@@ -11,6 +11,19 @@ document.getElementById('btn-donate-feni').addEventListener('click', function(){
 
         document.getElementById('account-balance').innerText = newBalance;
         document.getElementById('feni-account-balance').innerText = newFeniAccountBalance;
+
+        // add to history
+        const div = document.createElement('div');
+        div.classList.add('border-2', 'p-6');
+
+        const time = new Date();
+        
+        div.innerHTML = `
+        <p class="font-bold">${amountFeni} Taka is Donated for Flood Relief in Feni,Bangladesh</p>
+        <p class="mt-4 text-gray-500">Date: ${time}</p>
+        `;
+
+        document.getElementById('history-container').appendChild(div);
     }
     else {
         alert('Invalid Donation Amount');

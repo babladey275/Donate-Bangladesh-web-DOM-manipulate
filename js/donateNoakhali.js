@@ -11,8 +11,23 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
 
         document.getElementById('account-balance').innerText = newBalance;
         document.getElementById('noakhali-account-balance').innerText = newNoakhaliAccountBalance;
+
+
+        //Add to History
+        const div = document.createElement('div');
+        div.classList.add('border-2', 'p-6');
+
+        const time = new Date();
+        
+        div.innerHTML = `
+        <p class="font-bold">${amountNoakhali} Taka is Donated for Flood at Noakhali, Bangladesh</p>
+        <p class="mt-4 text-gray-500">Date: ${time}</p>
+        `;
+
+        document.getElementById('history-container').appendChild(div);
     }
     else {
         alert('Invalid Donation Amount');
     }
+
 });
