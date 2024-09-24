@@ -12,6 +12,12 @@ document.getElementById('btn-donate-feni').addEventListener('click', function(){
         document.getElementById('account-balance').innerText = newBalance;
         document.getElementById('feni-account-balance').innerText = newFeniAccountBalance;
 
+
+        // add to modal
+        const modal = document.getElementById('my_modal_1');
+        modal.showModal();
+
+        
         // add to history
         const div = document.createElement('div');
         div.classList.add('border-2', 'p-6');

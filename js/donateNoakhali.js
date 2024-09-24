@@ -12,6 +12,9 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
         document.getElementById('account-balance').innerText = newBalance;
         document.getElementById('noakhali-account-balance').innerText = newNoakhaliAccountBalance;
 
+        // add to modal
+        const modal = document.getElementById('my_modal_1');
+        modal.showModal();
 
         //Add to History
         const div = document.createElement('div');

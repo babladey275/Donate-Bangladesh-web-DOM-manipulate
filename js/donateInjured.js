@@ -12,6 +12,12 @@ document.getElementById('btn-donate-injured').addEventListener('click', function
         document.getElementById('account-balance').innerText = newBalance;
         document.getElementById('injured-account-balance').innerText = newInjuredAccountBalance;
 
+
+        // add to modal
+        const modal = document.getElementById('my_modal_1');
+        modal.showModal();
+
+        
         //Add to History
         const div = document.createElement('div');
         div.classList.add('border-2', 'p-6');
