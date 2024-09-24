@@ -21,3 +21,10 @@ function showSectionById(id) {
 
     document.getElementById(id).classList.remove('hidden');
 }
+
+function showBgById(id){
+    document.getElementById('btn-show-donation').classList.remove('bg-btn_bg');
+    document.getElementById('btn-show-history').classList.remove('bg-btn_bg');
+
+    document.getElementById(id).classList.add('bg-btn_bg');
+}
