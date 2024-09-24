@@ -27,16 +27,16 @@
     </script>
 </head>
 <body class="font-lexend">
-    <header>
+    <header class="sticky top-0 z-50 backdrop-blur-xl pb-5">
         <nav class="bg-[#F9F7F3]">
             <div class="w-11/12 mx-auto">
-              <div class="navbar pt-5 pb-14">
-                <div class="navbar-start  hidden md:block">
+              <div class="navbar pt-5 pb-8 md:pb-14">
+                <div class="navbar-start">
                   <a href="blog.html" class="btn bg-[#B4F461] px-8 font-bold">Blog</a>
                 </div>
-                <div class="navbar-center flex gap-3">
+                <div class="navbar-center flex flex-row gap-3">
                   <img class="h-8" src="assets/logo.png" alt="">
-                  <h2 class="text-xl font-bold">Donate Bangladesh</h2>
+                  <h2 class="text-xl font-bold hidden md:block">Donate Bangladesh</h2>
                 </div>
                 <div class="navbar-end">
                   <div class="flex space-x-1">
@@ -50,7 +50,7 @@
         </nav>
 
         <!-- features -->
-        <div class="flex justify-center mt-16">
+        <div class="flex justify-center mt-10 md:mt-16">
           <div class="space-x-3">
             <button id="btn-show-donation" class="btn btn-lg bg-[#B4F461] px-8">Donation</button>
             <button id="btn-show-history" class="btn btn-lg px-8 bg-gray-100 border-1 border-gray-300">History</button>
@@ -166,7 +166,6 @@
     </footer>
 
     <script src="js/utilities.js"></script>
-    <!-- <script src="js/donate.js"></script> -->
     <script src="js/donateNoakhali.js"></script>
     <script src="js/donateFeni.js"></script>
     <script src="js/donateInjured.js"></script>
