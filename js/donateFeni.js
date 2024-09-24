@@ -23,7 +23,7 @@ document.getElementById('btn-donate-feni').addEventListener('click', function(){
         
             // add to history
             const div = document.createElement('div');
-            div.classList.add('border-2', 'p-6');
+            div.classList.add('border-2', 'p-6', 'rounded-xl');
 
             const time = new Date();
         
